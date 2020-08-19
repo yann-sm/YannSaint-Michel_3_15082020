@@ -42,6 +42,14 @@ $colorTitle: #FDD835;
 	text-decoration: none;
 	text-transform: none;
 	color: white;
+	img {
+		position: absolute;
+		width: 40px;
+		height: 40px;
+		margin-top: -20px;
+		margin-left: -20px;
+	
+	}
 }
 
 .page__body {
@@ -66,9 +74,11 @@ $colorTitle: #FDD835;
 .menu1 a {
 	color: black;
 }
-.fontMenu__1 {
-	font-family: 'Shadows Into Light Two', cursive;
-	font-style: oblique;
+.fontMenu--menu {
+	font-family: 'Segoe Print', cursive/*'Shadows Into Light Two', cursive*/;
+	font-weight: 200;
+	font-size: 25px;
+	margin-top: -10px;
 }
 
 .menu2 {
@@ -77,10 +87,14 @@ $colorTitle: #FDD835;
 }
 .menu2 a {
 	color: black;
+	.menu2--color {
+		color: rgb(189, 87, 56);
+	}
 }
 .fontMenu__2 {
 	font-family: 'Frank Ruhl Libre', serif;
 	letter-spacing: 1px;
+	
 }
 .menu3 {
 	background-color: #F6F6F6;
@@ -89,6 +103,9 @@ $colorTitle: #FDD835;
 }
 .menu3 a {
 	color: black;
+	.menu3--color {
+		color: rgb(119, 161, 252);
+	}
 }
 .menu4 {
 	background-color: #FEFEFE;
@@ -96,7 +113,10 @@ $colorTitle: #FDD835;
 	font-size: 20px;
 }
 .menu4 a {
-	color: black;	
+	color: black;
+	.menu4--color {
+		color: #3CAD85;
+	}	
 }
 	
 .box__menu__marge {
