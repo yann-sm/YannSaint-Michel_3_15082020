@@ -1,4 +1,7 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Croissant+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
@@ -31,6 +34,8 @@
 .title {
   padding: 5px;
   font-size: 20px;
+  letter-spacing: -3px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .box {
@@ -72,14 +77,81 @@
   box-shadow: 1px 1px 2px 2px #EBEBEB;
 }
 
+/* Degrader */
+.gradient {
+  display: inline-block;
+  background: blue;
+  color: black;
+  position: relative;
+  -webkit-background-clip: text;
+}
+
+.gradient::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: -webkit-linear-gradient(left, #f00, #00f);
+  background: linear-gradient(to right, #f00, #00f);
+  content: "";
+  display: block;
+  mix-blend-mode: screen;
+}
+
+.gradient--menu3 {
+  display: inline-block;
+  background: blue;
+  color: black;
+  position: relative;
+  -webkit-background-clip: text;
+}
+
+.gradient--menu3::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: -webkit-linear-gradient(left, #3030f8, #8a9bfa);
+  background: linear-gradient(to right, #3030f8, #8a9bfa);
+  content: "";
+  display: block;
+  mix-blend-mode: screen;
+}
+
+.gradient--menu4 {
+  display: inline-block;
+  background: blue;
+  color: black;
+  position: relative;
+  -webkit-background-clip: text;
+}
+
+.gradient--menu4::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: -webkit-linear-gradient(left, #038624, #06f756);
+  background: linear-gradient(to right, #038624, #06f756);
+  content: "";
+  display: block;
+  mix-blend-mode: screen;
+}
+
+/****    ****/
 .menu1 {
   background-color: #FFDADA;
   font-family: "Ma Shan Zheng", cursive;
   font-size: 19px;
+  letter-spacing: 1px;
+  font-weight: 200;
 }
 
 .menu1 a {
-  color: black;
+  color: #3E2723;
 }
 
 .fontMenu--menu {
@@ -136,21 +208,6 @@
   padding-top: 100px;
 }
 
-.box__menu--animation {
-  width: 210px;
-  height: 300px;
-  /* transition pour zoom*/
-  -webkit-transition: all 1s ease;
-  /* Safari et Chrome */
-  -moz-transition: all 1s ease;
-  /* Firefox */
-  -ms-transition: all 1s ease;
-  /* Internet Explorer 9 */
-  -o-transition: all 1s ease;
-  /* Opera */
-  transition: all 1s ease;
-}
-
 /* BOUTON */
 .btn__previous {
   margin: auto;
@@ -158,7 +215,8 @@
   background-color: #3CAD85;
   color: #FDD835;
   font-size: 25px;
-  letter-spacing: 2px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
   padding: 10px;
   width: 250px;
   border-radius: 10Px;
@@ -170,9 +228,125 @@
   bottom: 0;
   width: 100%;
   padding-bottom: 5px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
 }
 .page__footer .box__item {
   width: 100%;
+}
+
+/* PAGES menu */
+.menu__title {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+}
+
+h2 {
+  font-weight: 100;
+}
+
+.menu__carte {
+  margin: auto;
+  text-align: center;
+  width: 420px;
+  height: 640px;
+  box-shadow: 1px 1px 2px 2px #EBEBEB;
+}
+.menu__carte .title__Menu1 {
+  margin-top: 0px;
+}
+
+.menu1__img {
+  padding-top: 30px;
+  width: 60px;
+  height: 60px;
+}
+
+.menu__end {
+  margin-left: 40px;
+  margin-top: -40px;
+  font-weight: 100;
+}
+.menu__end img {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  margin-top: 0px;
+  margin-left: -100px;
+}
+
+.menu__carte--paddingTop {
+  padding-top: 40px;
+}
+
+.contenu__carte {
+  margin-left: 50px;
+}
+
+.box__menu__carte {
+  flex-direction: row;
+}
+
+.hr__bold {
+  width: 90px;
+  font-weight: bolder;
+  border: 1px solid black;
+  margin-top: 15px;
+}
+
+.secondaire__title {
+  padding-left: 40px;
+  padding-right: 40px;
+  font-family: "Segoe Print", cursive;
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 0;
+}
+
+.paragraphe {
+  font-family: "Segoe Print", cursive;
+  font-size: 9px;
+  text-align: left;
+  margin-left: 50px;
+  padding-bottom: 40px;
+  letter-spacing: 0;
+}
+
+.paragraphe--menu2 {
+  font-size: 10.5px;
+  font-family: "Playfair Display", serif;
+}
+
+.secondaire__title--menu2 {
+  font-family: "Playfair Display", serif;
+  letter-spacing: 1px;
+}
+
+.paragraphe--menu3 {
+  font-weight: bold;
+}
+
+.paragraphe--menu4 {
+  font-size: 8.5px;
+  font-weight: bold;
+}
+
+.paragraphe p {
+  position: relative;
+  height: 0px;
+  padding-bottom: 6px;
+}
+
+.box__menu__description {
+  flex-direction: row;
+  width: 310px;
+  height: 10px;
+  margin-left: 10px;
+}
+
+.cake p {
+  padding-bottom: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */
