@@ -1,0 +1,160 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Croissant+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+/* font titre menu */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
+/* police menu de chic a la française */
+@import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@700&display=swap");
+/* police menu 1*/
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap");
+.box__main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* HEADER */
+.page__header,
+.page__footer {
+  flex-shrink: 0;
+  margin: -10px;
+}
+
+.fond {
+  background-color: #3CAD85;
+  color: #FDD835;
+  text-align: center;
+}
+
+.title {
+  padding: 5px;
+  font-size: 20px;
+}
+
+.box {
+  margin-left: -12px;
+  display: flex;
+}
+
+.box__row {
+  margin-left: -20px;
+}
+
+/* MAIN */
+.lien {
+  text-decoration: none;
+  text-transform: none;
+  color: white;
+}
+
+.page__body {
+  flex-grow: 1;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.box__menu {
+  width: 210px;
+  height: 300px;
+  /*border: 1px solid black;*/
+  border-radius: 2px;
+  margin: 30px;
+  text-align: center;
+  box-shadow: 1px 1px 2px 2px #EBEBEB;
+}
+
+.menu1 {
+  background-color: #FFDADA;
+  font-family: "Ma Shan Zheng", cursive;
+  font-size: 19px;
+}
+
+.menu1 a {
+  color: black;
+}
+
+.fontMenu__1 {
+  font-family: "Shadows Into Light Two", cursive;
+  font-style: oblique;
+}
+
+.menu2 {
+  background-color: #FFF3FA;
+  font-family: "Croissant One", cursive;
+}
+
+.menu2 a {
+  color: black;
+}
+
+.fontMenu__2 {
+  font-family: "Frank Ruhl Libre", serif;
+  letter-spacing: 1px;
+}
+
+.menu3 {
+  background-color: #F6F6F6;
+  font-family: "Dancing Script", cursive;
+  font-size: 20px;
+}
+
+.menu3 a {
+  color: black;
+}
+
+.menu4 {
+  background-color: #FEFEFE;
+  font-family: "Kaushan Script", cursive;
+  font-size: 20px;
+}
+
+.menu4 a {
+  color: black;
+}
+
+.box__menu__marge {
+  padding-top: 100px;
+}
+
+.box__menu--animation {
+  width: 210px;
+  height: 300px;
+  /* transition pour zoom*/
+  -webkit-transition: all 1s ease;
+  /* Safari et Chrome */
+  -moz-transition: all 1s ease;
+  /* Firefox */
+  -ms-transition: all 1s ease;
+  /* Internet Explorer 9 */
+  -o-transition: all 1s ease;
+  /* Opera */
+  transition: all 1s ease;
+}
+
+/* BOUTON */
+.btn__previous {
+  margin: auto;
+  text-align: center;
+  background-color: #3CAD85;
+  color: #FDD835;
+  font-size: 25px;
+  letter-spacing: 2px;
+  padding: 10px;
+  width: 250px;
+  border-radius: 10Px;
+}
+
+/* FOOTER */
+.page__footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding-bottom: 5px;
+}
+.page__footer .box__item {
+  width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */
