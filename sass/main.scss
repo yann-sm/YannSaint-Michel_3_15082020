@@ -10,11 +10,26 @@
 $fondTitle:#3CAD85; 
 $colorTitle: #FDD835;
 
+$colorBlack: black;
+
+$bgColorMenu1: #FFDADA;
+$colorMenu1: #3E2723;
+
+$bgColorMenu2: #FFF3FA;
+
+$bgColorMenu3: #ffffff;
+
+$bgColorMenu4: #FEFEFE;
+
+$boxShadowColor: #EBEBEB;
+
 /* HEADER */
+body {
+	margin: 0;
+}
 .page__header,
 .page__footer {
-	flex-shrink: 0;
-    margin: -10px;   
+	flex-shrink: 0; 
 }
 
 .fond {
@@ -33,6 +48,7 @@ $colorTitle: #FDD835;
 .box {
 	margin-left: -12px;
 	display: flex;	
+	flex-direction: row;
 }
 
 .box__row {
@@ -66,7 +82,7 @@ $colorTitle: #FDD835;
 	border-radius: 2px;
 	margin: 30px;
 	text-align: center;
-	box-shadow: 1px 1px 2px 2px #EBEBEB;
+	box-shadow: 1px 1px 4px 3px $boxShadowColor;
 }
 /* Degrader */
 .gradient {
@@ -82,8 +98,8 @@ $colorTitle: #FDD835;
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background: -webkit-linear-gradient(left, #f00, #00f);
-	background: linear-gradient(to right, #f00, #00f);
+	background: -webkit-linear-gradient(left, rgb(216, 111, 79), rgb(91, 91, 212));
+	background: linear-gradient(to right, rgb(216, 111, 79), rgb(91, 91, 212));
 	content: '';
 	display: block;
 	mix-blend-mode: screen;
@@ -103,7 +119,7 @@ $colorTitle: #FDD835;
 	bottom: 0;
 	left: 0;
 	background: -webkit-linear-gradient(left, rgb(48, 48, 248), rgb(138, 155, 250));
-	background: linear-gradient(to right, rgb(48, 48, 248), rgb(138, 155, 250));
+	background: linear-gradient(to right, rgb(48, 48, 248), rgba(87, 178, 253, 0.973));
 	content: '';
 	display: block;
 	mix-blend-mode: screen;
@@ -121,8 +137,8 @@ $colorTitle: #FDD835;
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background: -webkit-linear-gradient(left, rgb(3, 134, 36), rgb(6, 247, 86));
-	background: linear-gradient(to right,rgb(3, 134, 36), rgb(6, 247, 86));
+	background: -webkit-linear-gradient(left, rgb(3, 129, 34), rgb(166, 253, 132));
+	background: linear-gradient(to right,rgb(3, 129, 34), rgb(166, 253, 132));
 	content: '';
 	display: block;
 	mix-blend-mode: screen;
@@ -130,7 +146,7 @@ $colorTitle: #FDD835;
 /****    ****/
 
 .menu1 {
-	background-color: #FFDADA;
+	background-color: $bgColorMenu1;
 	font-family: 'Ma Shan Zheng', cursive;
 	font-size: 19px;	
 	letter-spacing: 1px;
@@ -138,7 +154,7 @@ $colorTitle: #FDD835;
 }
 
 .menu1 a {
-	color: #3E2723;
+	color: $colorMenu1;
 }
 .fontMenu--menu {
 	font-family: 'Segoe Print', cursive/*'Shadows Into Light Two', cursive*/;
@@ -146,9 +162,8 @@ $colorTitle: #FDD835;
 	font-size: 25px;
 	margin-top: -10px;
 }
-
 .menu2 {
-	background-color: #FFF3FA;
+	background-color: $bgColorMenu2;
 	font-family: 'Croissant One', cursive;
 }
 .menu2 a {
@@ -156,32 +171,34 @@ $colorTitle: #FDD835;
 	.menu2--color {
 		color: rgb(189, 87, 56);
 	}
+	h2 {
+		margin-top: 0;
+	}
 }
 .fontMenu__2 {
 	font-family: 'Frank Ruhl Libre', serif;
 	letter-spacing: 1px;
-	
 }
-.menu3 {
-	background-color: #F6F6F6;
+.menu3 { 
+	background-color: $bgColorMenu3;
 	font-family: 'Dancing Script', cursive;
 	font-size: 20px;
 }
 .menu3 a {
 	color: black;
 	.menu3--color {
-		color: rgb(119, 161, 252);
+		color: rgb(83, 138, 255);
 	}
 }
-.menu4 {
-	background-color: #FEFEFE;
+.menu4 { 
+	background-color: $bgColorMenu4;
 	font-family: 'Kaushan Script', cursive;
 	font-size: 20px;
 }
 .menu4 a {
 	color: black;
 	.menu4--color {
-		color: #3CAD85;
+		color: #23c914fb;
 	}	
 }
 	
@@ -193,15 +210,22 @@ $colorTitle: #FDD835;
 .btn__previous {
 	margin: auto;
 	text-align: center;
-	background-color: #3CAD85;
-	color: #FDD835;
+	background-color: $fondTitle;
+	color: $colorTitle;
 	font-size: 25px;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
 	padding: 10px;
 	width: 250px;
 	border-radius: 10Px;
+	a {
+		color: $colorTitle ;
+		text-decoration: none;
+	}
 }
+ 
+
+
 
 /* FOOTER */
 .page__footer {
@@ -215,10 +239,18 @@ $colorTitle: #FDD835;
 
     .box__item {
 	width: 100%;
-    }
+	}
+	a {
+	color: $colorTitle ;
+	text-decoration: none;
+	}
 }
 
+
 /* PAGES menu */
+.menu {
+	height: 55em;
+}
 .menu__title {
 	text-align: center;
 	font-family: 'Raleway', sans-serif;
@@ -316,4 +348,25 @@ h2 {
 	padding-bottom: 15px; 
 }
 
-
+/* Page prochainement */
+.box {
+	justify-content: center;
+}
+.element {
+	margin-top: 300px;
+	width: 25px;
+	height: 25px;
+	border: 1px solid black;
+	border-radius: 50%;
+}
+.element:nth-child(1) {
+	background-color: $colorBlack;
+	margin-right: 10px;
+}
+.element:nth-child(2) {
+	background-color: $colorBlack;
+	margin-right: 10px;
+}
+.element:nth-child(3) {
+	background-color: $colorBlack;
+}
