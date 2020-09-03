@@ -74,75 +74,45 @@ body {
 .box__menu {
   width: 210px;
   height: 300px;
-  /*border: 1px solid black;*/
   border-radius: 2px;
   margin: 30px;
   text-align: center;
   box-shadow: 1px 1px 4px 3px #EBEBEB;
 }
 
-/* Degrader */
-.gradient {
-  display: inline-block;
-  background: blue;
-  color: black;
-  position: relative;
-  -webkit-background-clip: text;
+/* Zoom image des menus */
+.menu__zoom__hover:hover .menu__zoom {
+  -moz-transition: all 0.8s;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+  -moz-transform: scale(1.15);
+  -webkit-transform: scale(1.15);
+  transform: scale(1.15);
 }
 
-.gradient::before {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: -webkit-linear-gradient(left, #d86f4f, #5b5bd4);
+/* Degrader de couleur pour les menus */
+.gradient {
+  color: white;
   background: linear-gradient(to right, #d86f4f, #5b5bd4);
-  content: "";
-  display: block;
-  mix-blend-mode: screen;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
 }
 
 .gradient--menu3 {
-  display: inline-block;
-  background: blue;
-  color: black;
-  position: relative;
-  -webkit-background-clip: text;
-}
-
-.gradient--menu3::before {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: -webkit-linear-gradient(left, #3030f8, #8a9bfa);
+  color: white;
   background: linear-gradient(to right, #3030f8, rgba(87, 178, 253, 0.973));
-  content: "";
-  display: block;
-  mix-blend-mode: screen;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
 }
 
 .gradient--menu4 {
-  display: inline-block;
-  background: blue;
-  color: black;
-  position: relative;
-  -webkit-background-clip: text;
-}
-
-.gradient--menu4::before {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: -webkit-linear-gradient(left, #038122, #a6fd84);
+  color: white;
   background: linear-gradient(to right, #038122, #a6fd84);
-  content: "";
-  display: block;
-  mix-blend-mode: screen;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
 }
 
 /****    ****/
@@ -186,7 +156,7 @@ body {
 }
 
 .menu3 {
-  background-color: #ffffff;
+  background-color: #ffffff91;
   font-family: "Dancing Script", cursive;
   font-size: 20px;
 }
@@ -300,7 +270,7 @@ h2 {
 }
 
 .contenu__carte {
-  margin-left: 50px;
+  margin-left: 0px;
 }
 
 .box__menu__carte {
@@ -308,7 +278,7 @@ h2 {
 }
 
 .hr__bold {
-  width: 90px;
+  width: 75px;
   font-weight: bolder;
   border: 1px solid black;
   margin-top: 15px;
@@ -327,7 +297,7 @@ h2 {
   font-family: "Segoe Print", cursive;
   font-size: 9px;
   text-align: left;
-  margin-left: 50px;
+  margin-left: 0px;
   padding-bottom: 40px;
   letter-spacing: 0;
 }
@@ -335,6 +305,18 @@ h2 {
 .paragraphe--menu2 {
   font-size: 10.5px;
   font-family: "Playfair Display", serif;
+}
+
+.menu2__color {
+  color: #d86f4f;
+}
+
+.menu2__color__diner {
+  color: #ac5fc4;
+}
+
+.menu2__color__cake {
+  color: #4848bb;
 }
 
 .secondaire__title--menu2 {
@@ -366,6 +348,7 @@ h2 {
 
 .cake p {
   padding-bottom: 15px;
+  margin-left: 40px;
 }
 
 /* Page prochainement */

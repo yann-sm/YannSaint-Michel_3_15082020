@@ -11,15 +11,22 @@ $fondTitle:#3CAD85;
 $colorTitle: #FDD835;
 
 $colorBlack: black;
+$colorWhite: white;
 
 $bgColorMenu1: #FFDADA;
 $colorMenu1: #3E2723;
 
 $bgColorMenu2: #FFF3FA;
+$colorMenu2: rgb(189, 87, 56);
+$orange: rgb(216, 111, 79);
+$purple: rgb(172, 95, 196);
+$darkblue: rgb(72, 72, 187);
 
-$bgColorMenu3: #ffffff;
+$bgColorMenu3: #ffffff91;
+$colorMenu3: rgb(83, 138, 255);
 
 $bgColorMenu4: #FEFEFE;
+$colorMenu4: #23c914fb;
 
 $boxShadowColor: #EBEBEB;
 
@@ -59,14 +66,13 @@ body {
 .lien {
 	text-decoration: none;
 	text-transform: none;
-	color: white;
+	color: $colorWhite;
 	img {
 		position: absolute;
 		width: 40px;
 		height: 40px;
 		margin-top: -20px;
 		margin-left: -20px;
-	
 	}
 }
 
@@ -78,71 +84,47 @@ body {
 
 .box__menu {
 	width: 210px; height: 300px;
-	/*border: 1px solid black;*/
 	border-radius: 2px;
 	margin: 30px;
 	text-align: center;
 	box-shadow: 1px 1px 4px 3px $boxShadowColor;
+}	
+
+/* Zoom image des menus */
+.menu__zoom__hover:hover .menu__zoom {
+	-moz-transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+	transition: all 0.8s;
+	-moz-transform: scale(1.15);
+    -webkit-transform: scale(1.15);
+	transform: scale(1.15);
 }
-/* Degrader */
+
+/* Degrader de couleur pour les menus */
 .gradient {
-	display: inline-block;
-	background: blue;
-	color: black;
-	position: relative;
-	-webkit-background-clip: text;
-}
-.gradient::before {
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background: -webkit-linear-gradient(left, rgb(216, 111, 79), rgb(91, 91, 212));
+	color: $colorWhite;
 	background: linear-gradient(to right, rgb(216, 111, 79), rgb(91, 91, 212));
-	content: '';
-	display: block;
-	mix-blend-mode: screen;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	display: inline-block;
 }
 
 .gradient--menu3 {
-	display: inline-block;
-	background: blue;
-	color: black;
-	position: relative;
-	-webkit-background-clip: text;	
-}
-.gradient--menu3::before {
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background: -webkit-linear-gradient(left, rgb(48, 48, 248), rgb(138, 155, 250));
+	color: $colorWhite;
 	background: linear-gradient(to right, rgb(48, 48, 248), rgba(87, 178, 253, 0.973));
-	content: '';
-	display: block;
-	mix-blend-mode: screen;
-}
-.gradient--menu4 {
-	display: inline-block;
-	background: blue;
-	color: black;
-	position: relative;
 	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	display: inline-block;	
 }
-.gradient--menu4::before {
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background: -webkit-linear-gradient(left, rgb(3, 129, 34), rgb(166, 253, 132));
+
+.gradient--menu4 {
+	color: $colorWhite;
 	background: linear-gradient(to right,rgb(3, 129, 34), rgb(166, 253, 132));
-	content: '';
-	display: block;
-	mix-blend-mode: screen;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	display: inline-block;
 }
+
 /****    ****/
 
 .menu1 {
@@ -167,9 +149,9 @@ body {
 	font-family: 'Croissant One', cursive;
 }
 .menu2 a {
-	color: black;
+	color: $colorBlack;
 	.menu2--color {
-		color: rgb(189, 87, 56);
+		color: $colorMenu2;
 	}
 	h2 {
 		margin-top: 0;
@@ -185,9 +167,9 @@ body {
 	font-size: 20px;
 }
 .menu3 a {
-	color: black;
+	color: $colorBlack;
 	.menu3--color {
-		color: rgb(83, 138, 255);
+		color: $colorMenu3;
 	}
 }
 .menu4 { 
@@ -196,9 +178,9 @@ body {
 	font-size: 20px;
 }
 .menu4 a {
-	color: black;
+	color: $colorBlack;
 	.menu4--color {
-		color: #23c914fb;
+		color: $colorMenu4;
 	}	
 }
 	
@@ -223,9 +205,6 @@ body {
 		text-decoration: none;
 	}
 }
- 
-
-
 
 /* FOOTER */
 .page__footer {
@@ -245,7 +224,6 @@ body {
 	text-decoration: none;
 	}
 }
-
 
 /* PAGES menu */
 .menu {
@@ -289,16 +267,17 @@ h2 {
 	padding-top: 40px;
 }
 .contenu__carte {
-	margin-left: 50px;
+	margin-left: 0px;
 }
 .box__menu__carte {
 	flex-direction: row;
 }
 .hr__bold {
-	width: 90px;
+	width: 75px;
 	font-weight: bolder;
-	border: 1px solid black;
+	border: 1px solid $colorBlack;
 	margin-top: 15px;
+	
 }
 .secondaire__title {
 	padding-left: 40px;
@@ -312,7 +291,7 @@ h2 {
 	font-family: 'Segoe Print', cursive;
 	font-size: 9px;
 	text-align: left;
-	margin-left: 50px;
+	margin-left: 0px;
 	padding-bottom: 40px;
 	letter-spacing: 0;
 }
@@ -320,6 +299,15 @@ h2 {
 .paragraphe--menu2 {
 	font-size: 10.5px;
 	font-family: 'Playfair Display', serif;
+}
+.menu2__color {
+	color: $orange;
+}
+.menu2__color__diner {
+	color: $purple;
+}
+.menu2__color__cake {
+	color: $darkblue;
 }
 .secondaire__title--menu2 {
 	font-family: 'Playfair Display', serif;
@@ -346,6 +334,7 @@ h2 {
 }
 .cake p {
 	padding-bottom: 15px; 
+	margin-left: 40px;
 }
 
 /* Page prochainement */
@@ -356,7 +345,7 @@ h2 {
 	margin-top: 300px;
 	width: 25px;
 	height: 25px;
-	border: 1px solid black;
+	border: 1px solid $colorBlack;
 	border-radius: 50%;
 }
 .element:nth-child(1) {
