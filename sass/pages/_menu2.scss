@@ -1,0 +1,45 @@
+
+.menu2 {
+	background-color: $bgColorMenu2;
+	font-family: 'Croissant One', cursive;
+}
+.menu2 a {
+	color: $colorBlack;
+	.menu2--color {
+		color: $colorMenu2;
+	}
+	h2 {
+		margin-top: 0;
+	}
+}
+.fontMenu__2 {
+	font-family: 'Frank Ruhl Libre', serif;
+	letter-spacing: 1px;
+}
+
+.paragraphe--menu2 {
+	font-size: 10.5px;
+	font-family: 'Playfair Display', serif;
+}
+.menu2__color {
+	color: $orange;
+}
+.menu2__color__diner {
+	color: $purple;
+}
+.menu2__color__cake {
+	color: $darkblue;
+}
+.secondaire__title--menu2 {
+	font-family: 'Playfair Display', serif;
+	letter-spacing: 1px;
+}
+
+.gradient {
+	color: $colorWhite;
+	background: linear-gradient(to right, rgb(216, 111, 79), rgb(91, 91, 212));
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	display: inline-block;
+}

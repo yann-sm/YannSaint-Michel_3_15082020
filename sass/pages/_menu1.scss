@@ -1,0 +1,46 @@
+
+.fontMenu--menu {
+	font-family: 'Segoe Print', cursive/*'Shadows Into Light Two', cursive*/;
+	font-weight: 200;
+	font-size: 25px;
+	margin-top: -10px;
+}
+.menu1 {
+	background-color: $bgColorMenu1;
+	font-family: 'Ma Shan Zheng', cursive;
+	font-size: 19px;	
+	letter-spacing: 1px;
+	font-weight: 200;
+}
+
+.menu1 a {
+	color: $colorMenu1;
+}
+
+.menu__carte {
+	margin: auto;
+	text-align: center;
+	width: 420px; 
+	height: 640px;
+	box-shadow: 1px 1px 2px 2px #EBEBEB;
+	.title__Menu1 {
+		margin-top: 0px;
+	}
+} 
+.menu1__img {
+	padding-top: 30px;
+	width: 60px;
+	height: 60px;
+}
+.menu__end {
+	margin-left: 40px;
+	margin-top: -40px;
+	font-weight: 100;
+	img {
+		position: absolute;
+		width: 30px;
+		height: 30px;
+		margin-top: 0px;
+		margin-left: -100px;
+	}
+}

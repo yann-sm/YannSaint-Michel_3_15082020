@@ -1,0 +1,18 @@
+/* FOOTER */
+.page__footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	padding-bottom: 5px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	font-size: 18px;
+
+    .box__item {
+	width: 100%;
+	}
+	a {
+	color: $colorTitle ;
+	text-decoration: none;
+	}
+}

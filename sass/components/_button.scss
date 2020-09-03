@@ -1,0 +1,17 @@
+/* BOUTON */
+.btn__previous {
+	margin: auto;
+	text-align: center;
+	background-color: $fondTitle;
+	color: $colorTitle;
+	font-size: 25px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	padding: 10px;
+	width: 250px;
+	border-radius: 10Px;
+	a {
+		color: $colorTitle ;
+		text-decoration: none;
+	}
+}

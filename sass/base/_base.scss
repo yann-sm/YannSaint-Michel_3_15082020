@@ -1,15 +1,3 @@
-
-@import "./base/police";
-@import "./utils/variables";
-@import "./layouts/header";
-@import "./layouts/footer";
-@import "./components/button";
-@import "./pages/menu1";
-@import "./pages/menu2";
-@import "./pages/menu3";
-@import "./pages/menu4";
-@import "./base/base";
-
 /* MAIN */
 .lien {
 	text-decoration: none;
@@ -36,31 +24,13 @@
 	margin: 30px;
 	text-align: center;
 	box-shadow: 1px 1px 4px 3px $boxShadowColor;
-}	
-
-/* Zoom image des menus */
-.menu__zoom__hover:hover .menu__zoom {
-	-moz-transition: all 0.8s;
-    -webkit-transition: all 0.8s;
-	transition: all 0.8s;
-	-moz-transform: scale(1.15);
-    -webkit-transform: scale(1.15);
-	transform: scale(1.15);
 }
 
-/* Degrader de couleur pour les menus */
-
-
-
-/****    ****/
-
-
-	
 .box__menu__marge {
 	padding-top: 100px; 
 }
 
-/* PAGES menu */
+
 .menu {
 	height: 55em;
 }
@@ -121,4 +91,14 @@ h2 {
 .cake p {
 	padding-bottom: 15px; 
 	margin-left: 40px;
+}
+
+/* Zoom image des menus */
+.menu__zoom__hover:hover .menu__zoom {
+	-moz-transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+	transition: all 0.8s;
+	-moz-transform: scale(1.15);
+    -webkit-transform: scale(1.15);
+	transform: scale(1.15);
 }
