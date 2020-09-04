@@ -10,115 +10,38 @@
 @import "./pages/menu4";
 @import "./base/base";
 
-/* MAIN */
-.lien {
-	text-decoration: none;
-	text-transform: none;
-	color: $colorWhite;
-	img {
-		position: absolute;
-		width: 40px;
-		height: 40px;
-		margin-top: -20px;
-		margin-left: -20px;
+
+
+.elt:nth-child(1) {
+	color: red;
+}
+.elt:nth-child(2) {
+	color: blueviolet;
+}
+.elt:nth-child(3) {
+	color: blue;
+}
+
+/* effet wiggle */
+.box__item__wiggle:hover {
+	animation: infinite shake 0.82s ;
+	/*
+	transform: translate3d(0, 0, 0);
+	backface-visibility: hidden;
+	perspective: 1000px;
+	*/
+  }
+  @keyframes shake {
+	10%, 90% {
+	  transform: translate3d(-4px, 0, 0);
 	}
-}
-
-.page__body {
-	flex-grow: 1;
-	margin: auto;
-	margin-top: 20px;
-}
-
-.box__menu {
-	width: 210px; height: 300px;
-	border-radius: 2px;
-	margin: 30px;
-	text-align: center;
-	box-shadow: 1px 1px 4px 3px $boxShadowColor;
-}	
-
-/* Zoom image des menus */
-.menu__zoom__hover:hover .menu__zoom {
-	-moz-transition: all 0.8s;
-    -webkit-transition: all 0.8s;
-	transition: all 0.8s;
-	-moz-transform: scale(1.15);
-    -webkit-transform: scale(1.15);
-	transform: scale(1.15);
-}
-
-/* Degrader de couleur pour les menus */
-
-
-
-/****    ****/
-
-
-	
-.box__menu__marge {
-	padding-top: 100px; 
-}
-
-/* PAGES menu */
-.menu {
-	height: 55em;
-}
-.menu__title {
-	text-align: center;
-	font-family: 'Raleway', sans-serif;
-}
-h2 {
-	font-weight: 100;
-}
-
-.menu__carte--paddingTop {
-	padding-top: 40px;
-}
-.contenu__carte {
-	margin-left: 0px;
-}
-.box__menu__carte {
-	flex-direction: row;
-	margin-left: 0px;
-}
-.hr__bold {
-	width: 75px;
-	font-weight: bolder;
-	border: 1px solid $colorBlack;
-	margin-top: 15px;
-	
-}
-.secondaire__title {
-	padding-left: 40px;
-	padding-right: 40px;
-	font-family: 'Segoe Print', cursive;
-	font-weight: bold;
-	font-size: 12px;
-	letter-spacing: 0;
-}
-.paragraphe {
-	font-family: 'Segoe Print', cursive;
-	font-size: 9px;
-	text-align: left;
-	margin-left: 0px;
-	padding-bottom: 40px;
-	letter-spacing: 0;
-}
-
-
-.paragraphe p {
-	position: relative;
-	height: 0px;
-	padding-bottom: 6px;
-}
-.box__menu__description {
-	flex-direction: row;
-	width: 310px;
-	height: 10px;
-	margin-left: 10px;
-}
-.cake p {
-	padding-bottom: 15px; 
-	margin-left: 40px;
-}
+	20%, 80% {
+	  transform: translate3d(4px, 0, 0);
+	}
+	30%, 50%, 70% {
+	  transform: translate3d(-4px, 0, 0);
+	}
+	40%, 60% {
+	  transform: translate3d(4px, 0, 0);
+	}
+  }

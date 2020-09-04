@@ -11,13 +11,11 @@
 		margin-left: -20px;
 	}
 }
-
 .page__body {
 	flex-grow: 1;
 	margin: auto;
 	margin-top: 20px;
 }
-
 .box__menu {
 	width: 210px; height: 300px;
 	border-radius: 2px;
@@ -25,14 +23,11 @@
 	text-align: center;
 	box-shadow: 1px 1px 4px 3px $boxShadowColor;
 }
-
 .box__menu__marge {
 	padding-top: 100px; 
 }
-
-
 .menu {
-	height: 55em;
+    height: 55em;
 }
 .menu__title {
 	text-align: center;
@@ -41,7 +36,6 @@
 h2 {
 	font-weight: 100;
 }
-
 .menu__carte--paddingTop {
 	padding-top: 40px;
 }
@@ -51,13 +45,6 @@ h2 {
 .box__menu__carte {
 	flex-direction: row;
 	margin-left: 0px;
-}
-.hr__bold {
-	width: 75px;
-	font-weight: bolder;
-	border: 1px solid $colorBlack;
-	margin-top: 15px;
-	
 }
 .secondaire__title {
 	padding-left: 40px;
@@ -73,10 +60,9 @@ h2 {
 	text-align: left;
 	margin-left: 0px;
 	padding-bottom: 40px;
-	letter-spacing: 0;
+    letter-spacing: 0;
+    
 }
-
-
 .paragraphe p {
 	position: relative;
 	height: 0px;
@@ -84,7 +70,7 @@ h2 {
 }
 .box__menu__description {
 	flex-direction: row;
-	width: 310px;
+	width: 325px;
 	height: 10px;
 	margin-left: 10px;
 }
@@ -100,5 +86,5 @@ h2 {
 	transition: all 0.8s;
 	-moz-transform: scale(1.15);
     -webkit-transform: scale(1.15);
-	transform: scale(1.15);
+    transform: scale(1.15);
 }
