@@ -199,7 +199,7 @@ body {
 }
 
 .menu3 {
-  background-color: #ffffff91;
+  background-color: #f0efefec;
   font-family: "Dancing Script", cursive;
   font-size: 20px;
 }
@@ -315,7 +315,9 @@ h2 {
   font-size: 9px;
   text-align: left;
   margin-left: 0px;
-  padding-bottom: 40px;
+  margin-top: -30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   letter-spacing: 0;
 }
 
@@ -337,8 +339,29 @@ h2 {
   margin-left: 40px;
 }
 
+/* img line menu */
+.box__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -20px;
+}
+
+.box__img__elt:nth-child(2) {
+  padding: 2%;
+}
+
+.img__reverse {
+  transform: scaleX(-1);
+}
+
+.img__line img {
+  height: 6px;
+}
+
 /* Zoom image des menus */
 .menu__zoom__hover:hover .menu__zoom {
+  opacity: 0.6;
   -moz-transition: all 0.8s;
   -webkit-transition: all 0.8s;
   transition: all 0.8s;
@@ -362,11 +385,6 @@ h2 {
 /* effet wiggle */
 .box__item__wiggle:hover {
   animation: infinite shake 0.82s;
-  /*
-  transform: translate3d(0, 0, 0);
-  backface-visibility: hidden;
-  perspective: 1000px;
-  */
 }
 
 @keyframes shake {

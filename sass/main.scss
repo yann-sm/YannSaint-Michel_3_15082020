@@ -25,11 +25,6 @@
 /* effet wiggle */
 .box__item__wiggle:hover {
 	animation: infinite shake 0.82s ;
-	/*
-	transform: translate3d(0, 0, 0);
-	backface-visibility: hidden;
-	perspective: 1000px;
-	*/
   }
   @keyframes shake {
 	10%, 90% {
