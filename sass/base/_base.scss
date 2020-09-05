@@ -53,7 +53,21 @@ h2 {
 	font-weight: bold;
 	font-size: 12px;
 	letter-spacing: 0;
+	&:hover {
+		background-image: linear-gradient(to right, $colorBlack 50%, transparent 0%);
+		background-size: 440px 1px;
+		background-repeat: no-repeat;
+		background-position: 0% bottom;
+		animation: linear 1s anim-underline ;
+	}
 }
+/* animation title underline */
+@keyframes anim-underline {
+   0% {background-size: 20px 1px;}
+   50% {background-size: 200px 1px;}
+   100% {background-size: 440px 1px;}
+}
+
 .paragraphe {
 	font-family: 'Segoe Print', cursive;
 	font-size: 9px;
@@ -96,7 +110,6 @@ h2 {
 }
 .img__line img {
 	height: 6px;
-
 }
 
 /* Zoom image des menus */
@@ -108,5 +121,5 @@ h2 {
 	-moz-transform: scale(1.15);
     -webkit-transform: scale(1.15);
 	transform: scale(1.15);
-	
 }
+

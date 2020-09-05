@@ -9,24 +9,13 @@
 @import "./pages/menu3";
 @import "./pages/menu4";
 @import "./base/base";
-
-
-
-.elt:nth-child(1) {
-	color: red;
-}
-.elt:nth-child(2) {
-	color: blueviolet;
-}
-.elt:nth-child(3) {
-	color: blue;
-}
+@import "./layouts/@media";
 
 /* effet wiggle */
 .box__item__wiggle:hover {
 	animation: infinite shake 0.82s ;
   }
-  @keyframes shake {
+@keyframes shake {
 	10%, 90% {
 	  transform: translate3d(-4px, 0, 0);
 	}
@@ -39,4 +28,4 @@
 	40%, 60% {
 	  transform: translate3d(4px, 0, 0);
 	}
-  }
+}

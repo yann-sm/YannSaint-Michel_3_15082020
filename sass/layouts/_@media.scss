@@ -1,0 +1,13 @@
+
+
+/* media queries */
+@media all and (max-width: 680px) {
+    .box--media {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .box__row {
+        margin-left: 0px;
+    }
+}

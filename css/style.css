@@ -15,7 +15,7 @@
 .box__main {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 110vh;
 }
 
 /* HEADER */
@@ -66,6 +66,10 @@ body {
 
 /* BOUTON */
 .btn__previous {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   margin: auto;
   text-align: center;
   background-color: #3CAD85;
@@ -74,12 +78,44 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   padding: 10px;
-  width: 250px;
+  width: 350px;
   border-radius: 10Px;
 }
 .btn__previous a {
   color: #FDD835;
   text-decoration: none;
+}
+
+@keyframes move {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.elt {
+  margin-left: 5px;
+  margin-top: 10px;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: #FDD835;
+}
+.elt:nth-child(1) {
+  animation: 1s move infinite;
+}
+.elt:nth-child(2) {
+  animation: 2s 1s move infinite;
+}
+.elt:nth-child(3) {
+  animation: 2s 1.5s move infinite;
+}
+.elt:nth-child(4) {
+  animation: 2s 1.8s move infinite;
 }
 
 .fontMenu--menu {
@@ -309,7 +345,26 @@ h2 {
   font-size: 12px;
   letter-spacing: 0;
 }
+.secondaire__title:hover {
+  background-image: linear-gradient(to right, black 50%, transparent 0%);
+  background-size: 440px 1px;
+  background-repeat: no-repeat;
+  background-position: 0% bottom;
+  animation: linear 1s anim-underline;
+}
 
+/* animation title underline */
+@keyframes anim-underline {
+  0% {
+    background-size: 20px 1px;
+  }
+  50% {
+    background-size: 200px 1px;
+  }
+  100% {
+    background-size: 440px 1px;
+  }
+}
 .paragraphe {
   font-family: "Segoe Print", cursive;
   font-size: 9px;
@@ -370,18 +425,18 @@ h2 {
   transform: scale(1.15);
 }
 
-.elt:nth-child(1) {
-  color: red;
-}
+/* media queries */
+@media all and (max-width: 680px) {
+  .box--media {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-.elt:nth-child(2) {
-  color: blueviolet;
+  .box__row {
+    margin-left: 0px;
+  }
 }
-
-.elt:nth-child(3) {
-  color: blue;
-}
-
 /* effet wiggle */
 .box__item__wiggle:hover {
   animation: infinite shake 0.82s;
