@@ -12,6 +12,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@700&display=swap");
 /* police menu 1*/
 @import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap");
+/* couleurs */
 .box__main {
   display: flex;
   flex-direction: column;
@@ -118,6 +119,37 @@ body {
   animation: 2s 1.8s move infinite;
 }
 
+/* effet wiggle */
+.box__item__wiggle:hover {
+  animation: infinite shake 0.82s;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(4px, 0, 0);
+  }
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+/* animation title underline */
+@keyframes anim-underline {
+  0% {
+    background-size: 20px 1px;
+  }
+  50% {
+    background-size: 200px 1px;
+  }
+  100% {
+    background-size: 440px 1px;
+  }
+}
 .fontMenu--menu {
   font-family: "Segoe Print", cursive;
   font-weight: 200;
@@ -278,7 +310,17 @@ body {
   font-weight: bold;
 }
 
-/* MAIN */
+.page__mentionLegales {
+  margin-top: 3rem;
+  margin-left: 40px;
+  margin-right: 40px;
+  height: 55em;
+}
+.page__mentionLegales__title {
+  text-decoration: underline orangered;
+}
+
+/* code page index */
 .lien {
   text-decoration: none;
   text-transform: none;
@@ -306,15 +348,25 @@ body {
   text-align: center;
   box-shadow: 1px 1px 4px 3px #EBEBEB;
 }
-
 .box__menu__marge {
   padding-top: 100px;
 }
 
+/* Zoom image des menus */
+.menu__zoom__hover:hover .menu__zoom {
+  opacity: 0.6;
+  -moz-transition: all 0.8s;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+  -moz-transform: scale(1.15);
+  -webkit-transform: scale(1.15);
+  transform: scale(1.15);
+}
+
+/* code utilisé sur tous les menus */
 .menu {
   height: 55em;
 }
-
 .menu__title {
   text-align: center;
   font-family: "Raleway", sans-serif;
@@ -353,18 +405,6 @@ h2 {
   animation: linear 1s anim-underline;
 }
 
-/* animation title underline */
-@keyframes anim-underline {
-  0% {
-    background-size: 20px 1px;
-  }
-  50% {
-    background-size: 200px 1px;
-  }
-  100% {
-    background-size: 440px 1px;
-  }
-}
 .paragraphe {
   font-family: "Segoe Print", cursive;
   font-size: 9px;
@@ -375,7 +415,6 @@ h2 {
   padding-bottom: 20px;
   letter-spacing: 0;
 }
-
 .paragraphe p {
   position: relative;
   height: 0px;
@@ -394,14 +433,13 @@ h2 {
   margin-left: 40px;
 }
 
-/* img line menu */
+/* img ligne menu */
 .box__img {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: -20px;
 }
-
 .box__img__elt:nth-child(2) {
   padding: 2%;
 }
@@ -412,17 +450,6 @@ h2 {
 
 .img__line img {
   height: 6px;
-}
-
-/* Zoom image des menus */
-.menu__zoom__hover:hover .menu__zoom {
-  opacity: 0.6;
-  -moz-transition: all 0.8s;
-  -webkit-transition: all 0.8s;
-  transition: all 0.8s;
-  -moz-transform: scale(1.15);
-  -webkit-transform: scale(1.15);
-  transform: scale(1.15);
 }
 
 /* media queries */
@@ -436,24 +463,14 @@ h2 {
   .box__row {
     margin-left: 0px;
   }
-}
-/* effet wiggle */
-.box__item__wiggle:hover {
-  animation: infinite shake 0.82s;
-}
 
-@keyframes shake {
-  10%, 90% {
-    transform: translate3d(-4px, 0, 0);
+  .page__mention {
+    height: 75em;
   }
-  20%, 80% {
-    transform: translate3d(4px, 0, 0);
-  }
-  30%, 50%, 70% {
-    transform: translate3d(-4px, 0, 0);
-  }
-  40%, 60% {
-    transform: translate3d(4px, 0, 0);
+}
+@media all and (max-width: 320px) {
+  .page__mention {
+    height: 90em;
   }
 }
 

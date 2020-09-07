@@ -10,4 +10,12 @@
     .box__row {
         margin-left: 0px;
     }
+    .page__mention {
+        height: 75em;
+    }
+}
+@media all and( max-width: 320px) {
+    .page__mention {
+        height: 90em;
+    }
 }

@@ -1,4 +1,4 @@
-/* MAIN */
+/* code page index */
 .lien {
 	text-decoration: none;
 	text-transform: none;
@@ -22,16 +22,28 @@
 	margin: 30px;
 	text-align: center;
 	box-shadow: 1px 1px 4px 3px $boxShadowColor;
+	&__marge {
+		padding-top: 100px; 
+	}
 }
-.box__menu__marge {
-	padding-top: 100px; 
+/* Zoom image des menus */
+.menu__zoom__hover:hover .menu__zoom {
+	opacity: 0.6;
+	-moz-transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+	transition: all 0.8s;
+	-moz-transform: scale(1.15);
+    -webkit-transform: scale(1.15);
+	transform: scale(1.15);
 }
+
+/* code utilisé sur tous les menus */
 .menu {
-    height: 55em;
-}
-.menu__title {
-	text-align: center;
-	font-family: 'Raleway', sans-serif;
+	height: 55em;
+	&__title {
+		text-align: center;
+		font-family: 'Raleway', sans-serif;
+	}
 }
 h2 {
 	font-weight: 100;
@@ -61,13 +73,6 @@ h2 {
 		animation: linear 1s anim-underline ;
 	}
 }
-/* animation title underline */
-@keyframes anim-underline {
-   0% {background-size: 20px 1px;}
-   50% {background-size: 200px 1px;}
-   100% {background-size: 440px 1px;}
-}
-
 .paragraphe {
 	font-family: 'Segoe Print', cursive;
 	font-size: 9px;
@@ -77,12 +82,11 @@ h2 {
 	padding-top: 20px;
 	padding-bottom: 20px;
     letter-spacing: 0;
-    
-}
-.paragraphe p {
-	position: relative;
-	height: 0px;
-	padding-bottom: 6px;
+    p {
+		position: relative;
+		height: 0px;
+		padding-bottom: 6px;
+	}
 }
 .box__menu__description {
 	flex-direction: row;
@@ -94,16 +98,15 @@ h2 {
 	padding-bottom: 15px; 
 	margin-left: 40px;
 }
-
-/* img line menu */
+/* img ligne menu */
 .box__img {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	margin-top: -20px;
-}
-.box__img__elt:nth-child(2){
-	padding: 2%;
+	&__elt:nth-child(2){
+		padding: 2%;
+	}
 }
 .img__reverse {
 	transform: scaleX(-1);
@@ -112,14 +115,4 @@ h2 {
 	height: 6px;
 }
 
-/* Zoom image des menus */
-.menu__zoom__hover:hover .menu__zoom {
-	opacity: 0.6;
-	-moz-transition: all 0.8s;
-    -webkit-transition: all 0.8s;
-	transition: all 0.8s;
-	-moz-transform: scale(1.15);
-    -webkit-transform: scale(1.15);
-	transform: scale(1.15);
-}
 
