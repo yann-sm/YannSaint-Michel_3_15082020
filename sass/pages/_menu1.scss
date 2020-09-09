@@ -1,13 +1,13 @@
 
 .fontMenu--menu {
-	font-family: 'Segoe Print', cursive/*'Shadows Into Light Two', cursive*/;
+	font-family: $policeMenu/*'Segoe Print', cursive*/;
 	font-weight: 200;
 	font-size: 25px;
 	margin-top: -10px;
 }
 .menu1 {
 	background-color: $bgColorMenu1;
-	font-family: 'Ma Shan Zheng', cursive;
+	font-family: $policeMenu1;
 	font-size: 19px;	
 	letter-spacing: 1px;
 	font-weight: 200;

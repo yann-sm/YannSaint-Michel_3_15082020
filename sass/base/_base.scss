@@ -1,4 +1,10 @@
 /* code page index */
+.box__main {
+	display: flex;
+	flex-direction: column;
+	min-height: 110vh;
+}
+
 .lien {
 	text-decoration: none;
 	text-transform: none;
@@ -15,6 +21,14 @@
 	flex-grow: 1;
 	margin: auto;
 	margin-top: 20px;
+}
+.box {
+	display: flex;	
+	flex-direction: row;
+	justify-content: center;
+}
+.box__row {
+	margin-left: -20px;
 }
 .box__menu {
 	width: 210px; height: 300px;

@@ -1,17 +1,12 @@
 
-.gradient--menu3 {
-	color: $colorWhite;
-	background: linear-gradient(to right, rgb(48, 48, 248), rgba(87, 178, 253, 0.973));
-	background-clip: text;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	display: inline-block;	
-}
 
+.gradient--menu3 {
+	@include gradient($colorGradientMenu3, $colorGradientMenu3bis);
+}
 
 .menu3 { 
 	background-color: $bgColorMenu3;
-	font-family: 'Dancing Script', cursive;
+	font-family: $policeMenu3title;
 	font-size: 20px;
 }
 .menu3 a {

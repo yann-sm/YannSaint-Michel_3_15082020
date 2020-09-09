@@ -1,7 +1,8 @@
 
+
 .menu2 {
 	background-color: $bgColorMenu2;
-	font-family: 'Croissant One', cursive;
+	font-family: $policeMenu2;
 }
 .menu2 a {
 	color: $colorBlack;
@@ -13,33 +14,27 @@
 	}
 }
 .fontMenu__2 {
-	font-family: 'Frank Ruhl Libre', serif;
+	font-family: $policeMenu2;
 	letter-spacing: 1px;
 }
 
 .paragraphe--menu2 {
 	font-size: 10.5px;
-	font-family: 'Playfair Display', serif;
+	font-family: $policeMenu2paragraphe;
 }
 .menu2__color {
 	color: $orange;
-}
-.menu2__color__diner {
-	color: $purple;
-}
-.menu2__color__cake {
-	color: $darkblue;
+	&__diner {
+		color: $purple;
+	}
+	&__cake {
+		color: $darkblue;
+	}
 }
 .secondaire__title--menu2 {
-	font-family: 'Playfair Display', serif;
+	font-family: $policeMenu2paragraphe;
 	letter-spacing: 1px;
 }
-
 .gradient {
-	color: $colorWhite;
-	background: linear-gradient(to right, rgb(216, 111, 79), rgb(91, 91, 212));
-	background-clip: text;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	display: inline-block;
+	@include gradient($colorGradientMenu2, $colorGradientMenu2bis);
 }

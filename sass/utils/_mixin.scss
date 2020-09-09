@@ -1,0 +1,10 @@
+
+/* dégradé de couleur */
+@mixin gradient($colorGradient, $colorGradientBis) {
+	color: $colorWhite;
+	background: linear-gradient(to right, $colorGradient, $colorGradientBis);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	display: inline-block;
+}

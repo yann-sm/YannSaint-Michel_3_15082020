@@ -12,19 +12,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@700&display=swap");
 /* police menu 1*/
 @import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap");
+/* police de caracteres */
 /* couleurs */
-.box__main {
-  display: flex;
-  flex-direction: column;
-  min-height: 110vh;
-}
-
+/* couleurs des dégradrés */
+/* dégradé de couleur */
 /* HEADER */
 body {
   margin: 0;
 }
 
 .fond {
+  margin: 0;
   background-color: #3CAD85;
   color: #FDD835;
   text-align: center;
@@ -35,16 +33,6 @@ body {
   font-size: 20px;
   letter-spacing: -3px;
   font-family: "Montserrat", sans-serif;
-}
-
-.box {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.box__row {
-  margin-left: -20px;
 }
 
 /* FOOTER */
@@ -151,7 +139,7 @@ body {
   }
 }
 .fontMenu--menu {
-  font-family: "Segoe Print", cursive;
+  font-family: "Shadows Into Light Two", cursive;
   font-weight: 200;
   font-size: 25px;
   margin-top: -10px;
@@ -208,7 +196,7 @@ body {
 
 .menu2 {
   background-color: #FFF3FA;
-  font-family: "Croissant One", cursive;
+  font-family: "Frank Ruhl Libre", serif;
 }
 
 .menu2 a {
@@ -234,11 +222,9 @@ body {
 .menu2__color {
   color: #d86f4f;
 }
-
 .menu2__color__diner {
   color: #ac5fc4;
 }
-
 .menu2__color__cake {
   color: #4848bb;
 }
@@ -321,6 +307,12 @@ body {
 }
 
 /* code page index */
+.box__main {
+  display: flex;
+  flex-direction: column;
+  min-height: 110vh;
+}
+
 .lien {
   text-decoration: none;
   text-transform: none;
@@ -338,6 +330,16 @@ body {
   flex-grow: 1;
   margin: auto;
   margin-top: 20px;
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.box__row {
+  margin-left: -20px;
 }
 
 .box__menu {
@@ -454,6 +456,10 @@ h2 {
 
 /* media queries */
 @media all and (max-width: 680px) {
+  .page__header {
+    width: 100%;
+  }
+
   .box--media {
     flex-direction: column;
     justify-content: center;
@@ -467,10 +473,56 @@ h2 {
   .page__mention {
     height: 75em;
   }
+
+  .btn__previous {
+    width: 300px;
+    padding-left: -10px;
+    padding-right: 10px;
+  }
+
+  .box__row {
+    margin-left: 0px;
+  }
+
+  .menu__carte {
+    height: auto;
+  }
+}
+@media all and (max-width: 425px) {
+  .menu__carte {
+    width: 425px;
+    height: auto;
+    margin-left: 5px;
+  }
+}
+@media all and (max-width: 375px) {
+  .menu__carte {
+    width: 375px;
+    height: auto;
+    margin-left: 5px;
+  }
+
+  .cake p {
+    margin-left: 20px;
+  }
 }
 @media all and (max-width: 320px) {
   .page__mention {
     height: 90em;
+  }
+
+  .box__row {
+    margin-left: 0px;
+  }
+
+  .menu__carte {
+    width: 325px;
+    padding-right: 5px;
+    margin-left: 0px;
+  }
+
+  .page__body {
+    margin-left: 5px;
   }
 }
 

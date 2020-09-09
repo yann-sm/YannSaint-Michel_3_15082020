@@ -1,14 +1,10 @@
-.box__main {
-	display: flex;
-	flex-direction: column;
-	min-height: 110vh;
-}
 
 /* HEADER */
 body {
 	margin: 0;
 }
 .fond {
+	margin: 0;
 	background-color: $fondTitle;
 	color: $colorTitle;
 	text-align: center;
@@ -18,12 +14,4 @@ body {
 	font-size: 20px; 
 	letter-spacing: -3px;
 	font-family: 'Montserrat', sans-serif;
-}
-.box {
-	display: flex;	
-	flex-direction: row;
-	justify-content: center;
-}
-.box__row {
-	margin-left: -20px;
 }
