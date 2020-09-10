@@ -13,54 +13,47 @@
     .box__row {
         margin-left: 0px;
     }
-    .page__mention {
-        height: 75em;
+    .page__mentionLegales {
+        height: auto;
+        padding-bottom: 90px;
     }
     .btn__previous {
         width: 300px;
         padding-left: -10px;
         padding-right: 10px;
     }
-    .box__row {
-        margin-left: 0px;
-    }
     .menu__carte {
-        height: auto;
+        height: 640px;
     }
 }
-
 @media all and( max-width: 425px) {
     .menu__carte {
         width: 425px;
-        height: auto;
         margin-left: 5px;
     }
 }
- 
 @media all and( max-width: 375px) {
     .menu__carte {
         width: 375px;
-        height: auto;
         margin-left: 5px;
     }
     .cake p {
         margin-left: 20px;
     }
 }
-
 @media all and( max-width: 320px) {
-    .page__mention {
-        height: 90em;
-    }
-    .box__row {
-        margin-left: 0px;
-    }
     .menu__carte {
         width: 325px;
+        height: 670px;
         padding-right: 5px;
         margin-left: 0px;
     }
     .page__body {
         margin-left: 5px;
+    }
+    .menu1, .menu2 {
+        .cake {
+            margin-left: -10px;
+        }
     }
 }

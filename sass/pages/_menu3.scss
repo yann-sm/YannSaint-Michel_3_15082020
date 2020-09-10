@@ -3,7 +3,6 @@
 .gradient--menu3 {
 	@include gradient($colorGradientMenu3, $colorGradientMenu3bis);
 }
-
 .menu3 { 
 	background-color: $bgColorMenu3;
 	font-family: $policeMenu3title;
@@ -15,7 +14,6 @@
 		color: $colorMenu3;
 	}
 }
-
 .paragraphe--menu3 {
 	font-weight: bold;
 }

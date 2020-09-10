@@ -16,6 +16,7 @@
 /* couleurs */
 /* couleurs des dégradrés */
 /* dégradé de couleur */
+/* box shadow */
 /* HEADER */
 body {
   margin: 0;
@@ -215,7 +216,7 @@ body {
 }
 
 .paragraphe--menu2 {
-  font-size: 10.5px;
+  font-size: 12.5px;
   font-family: "Playfair Display", serif;
 }
 
@@ -400,7 +401,7 @@ h2 {
   letter-spacing: 0;
 }
 .secondaire__title:hover {
-  background-image: linear-gradient(to right, black 50%, transparent 0%);
+  background-image: linear-gradient(to right, #4848bb 50%, transparent 0%);
   background-size: 440px 1px;
   background-repeat: no-repeat;
   background-position: 0% bottom;
@@ -470,8 +471,9 @@ h2 {
     margin-left: 0px;
   }
 
-  .page__mention {
-    height: 75em;
+  .page__mentionLegales {
+    height: auto;
+    padding-bottom: 90px;
   }
 
   .btn__previous {
@@ -480,25 +482,19 @@ h2 {
     padding-right: 10px;
   }
 
-  .box__row {
-    margin-left: 0px;
-  }
-
   .menu__carte {
-    height: auto;
+    height: 640px;
   }
 }
 @media all and (max-width: 425px) {
   .menu__carte {
     width: 425px;
-    height: auto;
     margin-left: 5px;
   }
 }
 @media all and (max-width: 375px) {
   .menu__carte {
     width: 375px;
-    height: auto;
     margin-left: 5px;
   }
 
@@ -507,22 +503,19 @@ h2 {
   }
 }
 @media all and (max-width: 320px) {
-  .page__mention {
-    height: 90em;
-  }
-
-  .box__row {
-    margin-left: 0px;
-  }
-
   .menu__carte {
     width: 325px;
+    height: 670px;
     padding-right: 5px;
     margin-left: 0px;
   }
 
   .page__body {
     margin-left: 5px;
+  }
+
+  .menu1 .cake, .menu2 .cake {
+    margin-left: -10px;
   }
 }
 

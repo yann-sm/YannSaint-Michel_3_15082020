@@ -35,7 +35,7 @@
 	border-radius: 2px;
 	margin: 30px;
 	text-align: center;
-	box-shadow: 1px 1px 4px 3px $boxShadowColor;
+	@include shadowCarte;
 	&__marge {
 		padding-top: 100px; 
 	}
@@ -56,9 +56,10 @@
 	height: 55em;
 	&__title {
 		text-align: center;
-		font-family: 'Raleway', sans-serif;
+		font-family: $policeAllMenuTitle;
 	}
 }
+
 h2 {
 	font-weight: 100;
 }
@@ -80,7 +81,7 @@ h2 {
 	font-size: 12px;
 	letter-spacing: 0;
 	&:hover {
-		background-image: linear-gradient(to right, $colorBlack 50%, transparent 0%);
+		background-image: linear-gradient(to right, $darkblue 50%, transparent 0%);
 		background-size: 440px 1px;
 		background-repeat: no-repeat;
 		background-position: 0% bottom;
