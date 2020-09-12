@@ -48,3 +48,9 @@
 		margin-left: -100px;
 	}
 }
+.secondaire__title--menu1 {
+	&:hover{
+		@include colorUnderline(left, textColor($listColorMenu1));
+		//background-image: linear-gradient(to right, $colorBlack 50%, transparent 0%);
+	}
+}

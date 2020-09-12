@@ -33,9 +33,6 @@
 	width: 10px;
 	border-radius: 50%;
 	background-color: $colorTitle;
-	&:nth-child(1) {
-		animation: 1s move infinite;
-	}
 	&:nth-child(2) {
 		animation: 2s 1s move infinite;
 	}
@@ -46,3 +43,5 @@
 		animation: 2s 1.8s move infinite;
 	}
 }
+
+

@@ -1,12 +1,36 @@
 
-/* dégradé de couleur */
-@mixin gradient($colorGradient, $colorGradientBis) {
-	color: $colorWhite;
-	background: linear-gradient(to right, $colorGradient, $colorGradientBis);
+
+/* function gradient */
+//list color :
+$listColorMenu1:($colorBlack),($colorMenu1);
+$listColorMenu2: ($colorGradientMenu2),($colorGradientMenu2bis);
+$listColorMenu3:($colorGradientMenu3),($colorGradientMenu3bis);
+$listColorMenu4:($colorGradientMenu4),($colorGradientMenu4bis);
+//mixin gradient :        
+@mixin gradientText($direction, $list) { 
+	background: -webkit-linear-gradient($direction, $list);
 	background-clip: text;
 	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+	-webkit-text-fill-color: transparent; 
 	display: inline-block;
+}
+//function gradient :
+@function textColor($list){
+	$text-list:();
+	@each $color in $list { 
+	  $text-list:append($text-list, $color, comma);    
+	}
+    @return $text-list;
+} 
+
+/* color underline */
+//mixin :
+@mixin colorUnderline($direction, $list) {
+	background-image: -webkit-linear-gradient($direction, $list);
+	background-size: 440px 1px;
+	background-repeat: no-repeat;
+	background-position: 0% bottom;
+	animation: linear 1s anim-underline ;
 }
 
 /* box shadow */
@@ -17,3 +41,16 @@
 @mixin shadowCarte {
     box-shadow: 1px 1px 4px 3px $boxShadowColor;
 }
+
+/* dégradé de couleur uniquement avec une mixin */
+/*
+@mixin gradient($colorGradient, $colorGradientBis) {
+	color: $colorWhite;
+	background: linear-gradient(to right, $colorGradient, $colorGradientBis);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	display: inline-block;
+}
+*/
+

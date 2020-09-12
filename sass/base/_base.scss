@@ -80,13 +80,6 @@ h2 {
 	font-weight: bold;
 	font-size: 12px;
 	letter-spacing: 0;
-	&:hover {
-		background-image: linear-gradient(to right, $darkblue 50%, transparent 0%);
-		background-size: 440px 1px;
-		background-repeat: no-repeat;
-		background-position: 0% bottom;
-		animation: linear 1s anim-underline ;
-	}
 }
 .paragraphe {
 	font-family: 'Segoe Print', cursive;

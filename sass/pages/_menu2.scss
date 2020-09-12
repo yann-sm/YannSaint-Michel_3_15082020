@@ -33,7 +33,11 @@
 .secondaire__title--menu2 {
 	font-family: $policeMenu2paragraphe;
 	letter-spacing: 1px;
+	&:hover{
+		@include colorUnderline(left, textColor($listColorMenu2));
+		//background-image: linear-gradient(to right, $colorGradientMenu2, $colorGradientMenu2bis);
+	}
 }
 .gradient {
-	@include gradient($colorGradientMenu2, $colorGradientMenu2bis);
+	@include gradientText(left, textColor($listColorMenu2));
 }
