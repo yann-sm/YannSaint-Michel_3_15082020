@@ -261,7 +261,6 @@ body {
 
 .gradient {
   background: -webkit-linear-gradient(left, #d86f4f, #5b5bd4);
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
@@ -269,7 +268,6 @@ body {
 
 .gradient--menu3 {
   background: -webkit-linear-gradient(left, #3030f8, rgba(87, 178, 253, 0.973));
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
@@ -302,7 +300,6 @@ body {
 
 .gradient--menu4 {
   background: -webkit-linear-gradient(left, #038122, #a6fd84);
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
@@ -344,6 +341,7 @@ body {
   text-decoration: underline orangered;
 }
 
+/* https://yann-sm.github.io/projet3OC/ - lien page github */
 /* code page index */
 .box__main {
   display: flex;
@@ -436,14 +434,6 @@ h2 {
   font-weight: bold;
   font-size: 12px;
   letter-spacing: 0;
-}
-.secondaire__title:hover {
-  /*	background-image: linear-gradient(to right, $darkblue 50%, transparent 0%);
-  	background-size: 440px 1px;
-  	background-repeat: no-repeat;
-  	background-position: 0% bottom;
-  	animation: linear 1s anim-underline ;
-  	*/
 }
 
 .paragraphe {

@@ -9,7 +9,6 @@ $listColorMenu4:($colorGradientMenu4),($colorGradientMenu4bis);
 //mixin gradient :        
 @mixin gradientText($direction, $list) { 
 	background: -webkit-linear-gradient($direction, $list);
-	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent; 
 	display: inline-block;
