@@ -18,7 +18,7 @@
 	letter-spacing: 1px;
 }
 .paragraphe--menu2 {
-	font-size: 12.5px;
+	font-size: 11px;
 	font-family: $policeMenu2paragraphe;
 }
 .menu2__color {
@@ -33,9 +33,9 @@
 .secondaire__title--menu2 {
 	font-family: $policeMenu2paragraphe;
 	letter-spacing: 1px;
+	font-size: 13px;
 	&:hover{
 		@include colorUnderline(left, textColor($listColorMenu2));
-		//background-image: linear-gradient(to right, $colorGradientMenu2, $colorGradientMenu2bis);
 	}
 }
 .gradient {

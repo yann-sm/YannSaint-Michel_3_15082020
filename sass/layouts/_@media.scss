@@ -23,7 +23,7 @@
         font-size: 20px;
     }
     .menu__carte {
-        height: 640px;
+        height: 680px;
     }
 }
 @media all and( max-width: 425px) {
@@ -43,10 +43,16 @@
 }
 @media all and( max-width: 320px) {
     .menu__carte {
-        width: 325px;
-        height: 670px;
+        width: 315px;
+        height: 640px;
         padding-right: 5px;
-        margin-left: 0px;
+        margin-left: 5px;
+    }
+    .paragraphe {
+        font-size: 9px;
+    }
+    .secondaire__title {
+        font-size: 11px;
     }
     .page__body {
         margin-left: 5px;

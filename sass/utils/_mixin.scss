@@ -15,21 +15,21 @@ $listColorMenu4:($colorGradientMenu4),($colorGradientMenu4bis);
 }
 //function gradient :
 @function textColor($list){
-	$text-list:();
+	$textColor-list:();
 	@each $color in $list { 
-	  $text-list:append($text-list, $color, comma);    
+	  $textColor-list:append($textColor-list, $color, comma);    
 	}
-    @return $text-list;
+    @return $textColor-list;
 } 
 
 /* color underline */
 //mixin :
 @mixin colorUnderline($direction, $list) {
-	background-image: -webkit-linear-gradient($direction, $list);
-	background-size: 440px 1px;
+	background: -webkit-linear-gradient($direction, $list);
+	background-size: auto 1px;
 	background-repeat: no-repeat;
 	background-position: 0% bottom;
-	animation: linear 1s anim-underline ;
+	animation: linear 1s anim-underline;
 }
 
 /* box shadow */

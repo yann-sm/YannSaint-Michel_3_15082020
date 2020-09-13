@@ -21,6 +21,5 @@
 .secondaire__title--menu3 {
 	&:hover{
 		@include colorUnderline(left, textColor($listColorMenu3));
-		//background-image: linear-gradient(to right, $colorGradientMenu3, $colorGradientMenu3bis);
 	}
 }

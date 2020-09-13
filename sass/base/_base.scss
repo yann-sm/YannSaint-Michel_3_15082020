@@ -60,7 +60,6 @@
 		font-family: $policeAllMenuTitle;
 	}
 }
-
 h2 {
 	font-weight: 100;
 }
@@ -77,20 +76,20 @@ h2 {
 .secondaire__title {
 	padding-left: 40px;
 	padding-right: 40px;
-	font-family: 'Segoe Print', cursive;
+	font-family: $policeMenu;
 	font-weight: bold;
-	font-size: 12px;
+	font-size: 13px;
 	letter-spacing: 0;
 }
 .paragraphe {
-	font-family: 'Segoe Print', cursive;
-	font-size: 9px;
+	font-family: $policeMenu;//'Segoe Print', cursive;
+	font-size: 11.5px;
 	text-align: left;
 	margin-left: 0px;
 	margin-top: -30px;
 	padding-top: 20px;
 	padding-bottom: 20px;
-    letter-spacing: 0;
+	letter-spacing: 0;
     p {
 		position: relative;
 		height: 0px;
