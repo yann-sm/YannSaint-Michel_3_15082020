@@ -14,10 +14,6 @@
 		color: $colorMenu3;
 	}
 }
-.paragraphe--menu3 {
-	font-weight: bold;
-}
-
 .secondaire__title--menu3 {
 	&:hover{
 		@include colorUnderline(left, textColor($listColorMenu3));
