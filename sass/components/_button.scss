@@ -9,21 +9,19 @@
 	background-color: $fondTitle;
 	color: $colorTitle;
 	font-size: 25px;
-	font-family: 'Montserrat', sans-serif;
+	font-family: $policeProchainement;
 	font-weight: 400;
 	padding: 10px;
 	width: 350px;
-	border-radius: 10Px;
+	border-radius: 10px;
 	a {
 		color: $colorTitle ;
 		text-decoration: none;
-		
 	}
 }
 @keyframes move {
-	0% {transform: scale(1);}
+	0%, 100% {transform: scale(1);}
 	50% {transform: scale(1.5);}
-	100% {transform: scale(1);}
 }
 	
 .elt {
@@ -37,7 +35,7 @@
 		animation: 2s 1s move infinite;
 	}
 	&:nth-child(3) {
-		animation: 2s 1.5s move infinite;
+		animation: 2s 1.4s move infinite;
 	}
 	&:nth-child(4) {
 		animation: 2s 1.8s move infinite;

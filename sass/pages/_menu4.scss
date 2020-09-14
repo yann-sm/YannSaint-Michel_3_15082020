@@ -1,9 +1,7 @@
 
 
 
-.gradient--menu4 {
-	@include gradientText(left, textColor($listColorMenu4));
-}
+
 .menu4 { 
 	background-color: $bgColorMenu4;
 	font-family: $policeMenu4title;
@@ -17,6 +15,9 @@
 }
 .paragraphe--menu4 {
 	font-size: 11px;
+}
+.gradient--menu4 {
+	@include gradientText(left, textColor($listColorMenu4));
 }
 .secondaire__title--menu4 {
 	&:hover{

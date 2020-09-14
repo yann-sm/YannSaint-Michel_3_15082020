@@ -6,11 +6,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Croissant+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
-/* font titre menu */
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
-/* police menu de chic a la française */
 @import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@700&display=swap");
-/* police menu 1*/
 @import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap");
 /* police de caracteres */
 /* couleurs */
@@ -81,7 +78,7 @@ body {
   font-weight: 400;
   padding: 10px;
   width: 350px;
-  border-radius: 10Px;
+  border-radius: 10px;
 }
 .btn__previous a {
   color: #FDD835;
@@ -89,14 +86,11 @@ body {
 }
 
 @keyframes move {
-  0% {
+  0%, 100% {
     transform: scale(1);
   }
   50% {
     transform: scale(1.5);
-  }
-  100% {
-    transform: scale(1);
   }
 }
 .elt {
@@ -111,7 +105,7 @@ body {
   animation: 2s 1s move infinite;
 }
 .elt:nth-child(3) {
-  animation: 2s 1.5s move infinite;
+  animation: 2s 1.4s move infinite;
 }
 .elt:nth-child(4) {
   animation: 2s 1.8s move infinite;
@@ -123,16 +117,10 @@ body {
 }
 
 @keyframes shake {
-  10%, 90% {
+  10%, 30%, 50%, 70%, 90% {
     transform: translate(-4px, 0);
   }
-  20%, 80% {
-    transform: translate(4px, 0);
-  }
-  30%, 50%, 70% {
-    transform: translate(-4px, 0);
-  }
-  40%, 60% {
+  20%, 40%, 60%, 80% {
     transform: translate(4px, 0);
   }
 }
@@ -153,7 +141,7 @@ body {
 .box__main {
   display: flex;
   flex-direction: column;
-  min-height: 110vh;
+  min-height: 125vh;
 }
 
 .lien {
@@ -313,7 +301,7 @@ h2 {
   margin: auto;
   text-align: center;
   width: 420px;
-  height: 680px;
+  height: 690px;
   box-shadow: 1px 1px 2px 2px #EBEBEB;
 }
 .menu__carte .title__Menu1 {
@@ -349,7 +337,7 @@ h2 {
 
 .menu2 {
   background-color: #FFF3FA;
-  font-family: "Frank Ruhl Libre", serif;
+  font-family: "Croissant One", cursive;
 }
 
 .menu2 a {
@@ -402,13 +390,6 @@ h2 {
   display: inline-block;
 }
 
-.gradient--menu3 {
-  background: -webkit-linear-gradient(left, #3030f8, rgba(87, 178, 253, 0.973));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  display: inline-block;
-}
-
 .menu3 {
   background-color: #f0efefec;
   font-family: "Dancing Script", cursive;
@@ -422,8 +403,11 @@ h2 {
   color: #538aff;
 }
 
-.paragraphe--menu3 {
-  font-weight: bold;
+.gradient--menu3 {
+  background: -webkit-linear-gradient(left, #3030f8, rgba(87, 178, 253, 0.973));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
 }
 
 .secondaire__title--menu3:hover {
@@ -432,13 +416,6 @@ h2 {
   background-repeat: no-repeat;
   background-position: 0% bottom;
   animation: linear 1s anim-underline;
-}
-
-.gradient--menu4 {
-  background: -webkit-linear-gradient(left, #038122, #a6fd84);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  display: inline-block;
 }
 
 .menu4 {
@@ -456,7 +433,13 @@ h2 {
 
 .paragraphe--menu4 {
   font-size: 11px;
-  font-weight: bold;
+}
+
+.gradient--menu4 {
+  background: -webkit-linear-gradient(left, #038122, #a6fd84);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
 }
 
 .secondaire__title--menu4:hover {

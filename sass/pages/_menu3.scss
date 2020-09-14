@@ -1,8 +1,6 @@
 
 
-.gradient--menu3 {
-	@include gradientText(left, textColor($listColorMenu3));
-}
+
 .menu3 { 
 	background-color: $bgColorMenu3;
 	font-family: $policeMenu3title;
@@ -14,6 +12,10 @@
 		color: $colorMenu3;
 	}
 }
+.gradient--menu3 {
+	@include gradientText(left, textColor($listColorMenu3));
+}
+
 .secondaire__title--menu3 {
 	&:hover{
 		@include colorUnderline(left, textColor($listColorMenu3));
